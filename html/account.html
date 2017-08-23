@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Личный кабинет</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/bootstrap.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-tab.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="middle">
+		<header id="header">
+            <div class="container">
+				<div class="row">
+					<div class="col-sm-2 col-xs-1">
+						<a href="#"><img src="images/logo.png"></a></a>
+					</div>
+					<div class="col-sm-10 col-xs-11">
+						<div class="my-block right">
+							<a href="#" class="st-button">Подать обяъвление</a>
+						</div>
+						<div class="private my-block right">
+							<a href="#"><span class="glyphicon glyphicon-user"></span>Личный кабинет</a>
+							<div class="personal">
+								<a href="#" class="st-button">Войти</a>
+								<a href="#">Сообщения</a>
+								<a href="#">Обяъвления</a>
+								<a href="#">Настройки</a>
+								<a href="#">Выйти</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--------------------------------------------ОСНОВНОЕ СОДЕРЖИМОЕ СТРАНИЦЫ------------------------------------------>
+		<div class="container">
+
+				 <div class="tabs">
+				<input id="tab1" type="radio" name="tabs" checked>
+				<label for="tab1" title="messages"><span class="glyphicon glyphicon-envelope"></span>Сообщения</label>
+				<input id="tab2" type="radio" name="tabs">
+				<label for="tab2" title="adver"><span class="glyphicon glyphicon-pencil"></span>Мои объявления</label>
+				<input id="tab3" type="radio" name="tabs">
+				<label for="tab3" title="settings"><span class="glyphicon glyphicon-lock"></span>Мои поиски</label>
+				<input id="tab4" type="radio" name="tabs">
+				<label for="tab4" title="settings"><span class="glyphicon glyphicon-cog"></span>Настройки</label>
+				
+				<section id="content-tab1">
+					<div class="row message">
+					<input type="text" name="searchText" class="searchText" value="" placeholder="Поиск по сообщениям">
+					<hr>
+					
+					
+						<div class="row option-box">
+						<div class="col-md-offset-2 col-md-7 col-md-offset-3  type-message">
+							<table id="table-icon" cellpadding="0">
+								<tr>
+									<td><a href="#"><span class="glyphicon glyphicon-pencil"></span></a>Написать</td>
+									<td><a href="#"><span class="glyphicon glyphicon-refresh"></span></a>Обновить</td>
+									<td class="no-active"><a href="#"><span class="no-active glyphicon glyphicon-share"></span></a>Переслать</td>
+									<td class="no-active"><a href="#"><span class="no-active glyphicon glyphicon-exclamation-sign"></span></a>Важное</td>
+									<td class="no-active"><a href="#"><span class="no-active glyphicon glyphicon-fire"></span></a>Спам</td>
+									<td class="no-active"><a href="#"><span class="no-active glyphicon glyphicon-trash"></span></a>Удалить</td>	
+								</tr>
+							</table>
+							</div>
+						</div>
+						<hr>
+						
+						
+						<div class="col-sm-2 type-message">
+							<input type="submit" class="st-button" value="Написать">
+							<a href="#"class="active-message">Входящие (3)</a>
+							<a href="#"class="">Отправленные</a>
+							<a href="#"class="">Важные</a>
+							<a href="#"class="">Корзина</a>
+							
+						</div>
+						
+						<div class="col-sm-10">
+									
+						<div class="message-item">
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								<input type="checkbox" id=""></input>
+								<span class="mailer"> Gorlovka-dn, Я	(3)</span>
+							</div>
+							<div class="col-md-8 col-sm-6 col-xs-6">
+							 <div class="content">
+									<span class="theme"> Тема письма</span>
+									<span class="letter">На вакансию Оператор 1С. Проживаю на ВАЗе. Было бы ОЧЕНЬ удобно добираться в 
+									Амстор на Стадионной. (если вдруг Вам нужны и туда сотрудники).</span>	
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-2 col-xs-2">
+							<div class="row">
+								<a href="#"><span class="glyphicon glyphicon-paperclip"></span></a>
+								<span> 14:12</span>
+							</div>
+							</div>
+							</div>
+						</div>
+						
+						<div class="message-item">
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								<input type="checkbox" id=""></input>
+								<span class="mailer"> Gorlovka-dn, Я	(3)</span>
+							</div>
+							<div class="col-md-8 col-sm-6 col-xs-6">
+							 <div class="content">
+									<span class="theme"> Тема письма</span>
+									<span class="letter">На вакансию Оператор 1С. Проживаю на ВАЗе. Было бы ОЧЕНЬ удобно добираться в 
+									Амстор на Стадионной. (если вдруг Вам нужны и туда сотрудники).</span>	
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-2 col-xs-2">
+							<div class="row">
+								<a href="#"><span class="glyphicon glyphicon-paperclip"></span></a>
+								<span> 14:12</span>
+							</div>
+							</div>
+							</div>
+						</div>
+						
+						<div class="message-item">
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								<input type="checkbox" id=""></input>
+								<span class="mailer"> Gorlovka-dn, Я	(3)</span>
+							</div>
+							<div class="col-md-8 col-sm-6 col-xs-6">
+							 <div class="content">
+									<span class="theme"> Тема письма</span>
+									<span class="letter">На вакансию Оператор 1С. Проживаю на ВАЗе. Было бы ОЧЕНЬ удобно добираться в 
+									Амстор на Стадионной. (если вдруг Вам нужны и туда сотрудники).</span>	
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-2 col-xs-2">
+							<div class="row">
+								<a href="#"><span class="glyphicon glyphicon-paperclip"></span></a>
+								<span> 14:12</span>
+							</div>
+							</div>
+							</div>
+						</div>
+						
+						<div class="message-item">
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								<input type="checkbox" id=""></input>
+								<span class="mailer"> Gorlovka-dn, Я	(3)</span>
+							</div>
+							<div class="col-md-8 col-sm-6 col-xs-6">
+							 <div class="content">
+									<span class="theme"> Тема письма</span>
+									<span class="letter">На вакансию Оператор 1С. Проживаю на ВАЗе. Было бы ОЧЕНЬ удобно добираться в 
+									Амстор на Стадионной. (если вдруг Вам нужны и туда сотрудники).</span>	
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-2 col-xs-2">
+							<div class="row">
+								<a href="#"><span class="glyphicon glyphicon-paperclip"></span></a>
+								<span> 14:12</span>
+							</div>
+							</div>
+							</div>
+						</div>
+						
+						<div class="message-item">
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								<input type="checkbox" id=""></input>
+								<span class="mailer"> Gorlovka-dn, Я	(3)</span>
+							</div>
+							<div class="col-md-8 col-sm-6 col-xs-6">
+							 <div class="content">
+									<span class="theme"> Тема письма</span>
+									<span class="letter">На вакансию Оператор 1С. Проживаю на ВАЗе. Было бы ОЧЕНЬ удобно добираться в 
+									Амстор на Стадионной. (если вдруг Вам нужны и туда сотрудники).</span>	
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-2 col-xs-2">
+							<div class="row">
+								<a href="#"><span class="glyphicon glyphicon-paperclip"></span></a>
+								<span> 14:12</span>
+							</div>
+							</div>
+							</div>
+						</div>
+						
+						<div class="message-item">
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								<input type="checkbox" id=""></input>
+								<span class="mailer"> Gorlovka-dn, Я	(3)</span>
+							</div>
+							<div class="col-md-8 col-sm-6 col-xs-6">
+							 <div class="content">
+									<span class="theme"> Тема письма</span>
+									<span class="letter">На вакансию Оператор 1С. Проживаю на ВАЗе. Было бы ОЧЕНЬ удобно добираться в 
+									Амстор на Стадионной. (если вдруг Вам нужны и туда сотрудники).</span>	
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-2 col-xs-2">
+							<div class="row">
+								<a href="#"><span class="glyphicon glyphicon-paperclip"></span></a>
+								<span> 14:12</span>
+							</div>
+							</div>
+							</div>
+						</div>
+						
+						<div class="message-item">
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								<input type="checkbox" id=""></input>
+								<span class="mailer"> Gorlovka-dn, Я	(3)</span>
+							</div>
+							<div class="col-md-8 col-sm-6 col-xs-6">
+							 <div class="content">
+									<span class="theme"> Тема письма</span>
+									<span class="letter">На вакансию Оператор 1С. Проживаю на ВАЗе. Было бы ОЧЕНЬ удобно добираться в 
+									Амстор на Стадионной. (если вдруг Вам нужны и туда сотрудники).</span>	
+								</div>
+							</div>
+							<div class="col-md-1 col-sm-2 col-xs-2">
+							<div class="row">
+								<a href="#"><span class="glyphicon glyphicon-paperclip"></span></a>
+								<span> 14:12</span>
+							</div>
+							</div>
+							</div>
+						</div>
+						
+						</div>
+						
+
+						
+						
+					</div>
+					
+					<!-------------------------------------------Номера страниц -------------------------------------------->
+					<div class="row">
+						<div class="items col-md-7 col-md-offset-5">
+							<div class="pagination">
+							  <ul>
+								<li><a href="#">&laquo;</a></li>
+								<li><a href="#"  class="active">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">&raquo;</a></li>
+							  </ul>
+							</div>
+						</div>
+					</div>
+			
+				</section>
+				<section id="content-tab2" class="advertising">
+					<div class="row">
+						<div class="col-md-2">
+						
+							<span>Дата</span>
+						</div>
+						<div class="col-md-6">
+							<span>Заголовок</span>
+						</div>
+						<div class="col-md-2">
+							<span>Цена</span>
+						</div>
+						<div class="col-md-2">
+							<span>Сообщения</span>
+						</div>
+					</div>
+					
+					<hr>
+					
+					<div class="item-sm-adv">
+					<div class="row">
+						<div class="col-sm-2">
+							<input type="checkbox" id=""></input>
+							<span class="date-start">С: 2 авг. </span>
+							<span class="date-finish">По: 4 авг.</span>
+						</div>
+						<div class="col-sm-6">
+							<span class="adv-caption">Заголовок объявления</span>
+							<a href="#" class="adv-opt"><span class="glyphicon glyphicon-new-window"></span>Посмотреть</a>
+							<a href="#" class="adv-opt"><span class="glyphicon glyphicon-pencil"></span>Редактировать</a>
+							<a href="#" class="adv-opt"><span class="glyphicon glyphicon-remove"></span>Удалить</a>
+						</div>
+						<div class="col-sm-2"> 	
+							до 5 000 грн.
+						</div>
+						<div class="col-sm-2 center">
+							<a href="#" class="st-button"><span class="glyphicon glyphicon-envelope"></span>5</a>
+						</div>
+					</div>
+					</div>
+					
+					<div class="item-sm-adv">
+					<div class="row">
+						<div class="col-sm-2">
+							<input type="checkbox" id=""></input>
+							<span class="date-start">С: 2 авг. </span>
+							<span class="date-finish">По: 4 авг.</span>
+						</div>
+						<div class="col-sm-6">
+							<span class="adv-caption">Заголовок объявления</span>
+							<a href="#" class="adv-opt"><span class="glyphicon glyphicon-new-window"></span>Посмотреть</a>
+							<a href="#" class="adv-opt"><span class="glyphicon glyphicon-pencil"></span>Редактировать</a>
+							<a href="#" class="adv-opt"><span class="glyphicon glyphicon-remove"></span>Удалить</a>
+						</div>
+						<div class="col-sm-2"> 	
+							до 5 000 грн.
+						</div>
+						<div class="col-sm-2 center">
+							<a href="#" class="st-button"><span class="glyphicon glyphicon-envelope"></span>5</a>
+						</div>
+						</div>
+					</div>
+				</section>
+				<section id="content-tab3" class="my-searches clearfix">
+						<div class="search-item">
+						<a href="#" class="search-delete"><span class="glyphicon glyphicon-remove"></span></a>
+							<p class="seacrh-caption">Купить компьютер</p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Город:<span class="search-value">Донецк</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Мин. цена:<span class="search-value">9000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Макс.цена:<span class="search-value">10 000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Производитель:<span class="search-value">lG</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Модель:<span class="search-value">54548т</span></p>
+							<div class="his-search">
+								<a href="#" class="hissearch">Найти &raquo;</a>
+							</div>
+						</div>
+						<div class="search-item">
+							<a href="#" class="search-delete"><span class="glyphicon glyphicon-remove"></span></a>
+							<p class="seacrh-caption">Купить компьютер</p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Город:<span class="search-value">Донецк</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Мин. цена:<span class="search-value">9000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Макс.цена:<span class="search-value">10 000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Производитель:<span class="search-value">lG</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Модель:<span class="search-value">54548т</span></p>
+							</br>
+							<div class="his-search">
+								<a href="#" class="hissearch">Найти &raquo;</a>
+							</div>
+						</div>
+						<div class="search-item">
+							<a href="#" class="search-delete"><span class="glyphicon glyphicon-remove"></span></a>
+							<p class="seacrh-caption">Купить компьютер</p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Город:<span class="search-value">Донецк</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Мин. цена:<span class="search-value">9000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Макс.цена:<span class="search-value">10 000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Производитель:<span class="search-value">lG</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Модель:<span class="search-value">54548т</span></p>
+							</br>
+							<div class="his-search">
+								<a href="#" class="hissearch">Найти &raquo;</a>
+							</div>
+				        </div>
+						<div class="search-item">
+							<a href="#" class="search-delete"><span class="glyphicon glyphicon-remove"></span></a>
+							<p class="seacrh-caption">Купить компьютер</p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Город:<span class="search-value">Донецк</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Мин. цена:<span class="search-value">9000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Макс.цена:<span class="search-value">10 000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Производитель:<span class="search-value">lG</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Модель:<span class="search-value">54548т</span></p>
+							</br>
+							<div class="his-search">
+								<a href="#" class="hissearch">Найти &raquo;</a>
+							</div>
+						</div>
+						<div class="search-item">
+							<a href="#" class="search-delete"><span class="glyphicon glyphicon-remove"></span></a>
+							<p class="seacrh-caption">Купить компьютер</p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Город:<span class="search-value">Донецк</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Мин. цена:<span class="search-value">9000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Макс.цена:<span class="search-value">10 000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Производитель:<span class="search-value">lG</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Модель:<span class="search-value">54548т</span></p>
+							</br>
+							<div class="his-search">
+								<a href="#" class="hissearch">Найти &raquo;</a>
+							</div>
+						</div>
+						<div class="search-item">
+							<a href="#" class="search-delete"><span class="glyphicon glyphicon-remove"></span></a>
+							<p class="seacrh-caption">Купить компьютер</p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Город:<span class="search-value">Донецк</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Мин. цена:<span class="search-value">9000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Макс.цена:<span class="search-value">10 000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Производитель:<span class="search-value">lG</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Модель:<span class="search-value">54548т</span></p>
+							</br>
+							<div class="his-search">
+								<a href="#" class="hissearch">Найти &raquo;</a>
+							</div>
+				        </div>
+						<div class="search-item">
+							<a href="#" class="search-delete"><span class="glyphicon glyphicon-remove"></span></a>
+							<p class="seacrh-caption">Купить компьютер</p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Город:<span class="search-value">Донецк</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Мин. цена:<span class="search-value">9000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Макс.цена:<span class="search-value">10 000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Производитель:<span class="search-value">lG</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Модель:<span class="search-value">54548т</span></p>
+							</br>
+							<div class="his-search">
+								<a href="#" class="hissearch">Найти &raquo;</a>
+							</div>
+						</div>
+						<div class="search-item">
+							<a href="#" class="search-delete"><span class="glyphicon glyphicon-remove"></span></a>
+							<p class="seacrh-caption">Купить компьютер</p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Город:<span class="search-value">Донецк</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Мин. цена:<span class="search-value">9000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Макс.цена:<span class="search-value">10 000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Производитель:<span class="search-value">lG</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Модель:<span class="search-value">54548т</span></p>
+							</br>
+							<div class="his-search">
+								<a href="#" class="hissearch">Найти &raquo;</a>
+							</div>
+						</div>
+						<div class="search-item">
+							<a href="#" class="search-delete"><span class="glyphicon glyphicon-remove"></span></a>
+							<p class="seacrh-caption">Купить компьютер</p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Город:<span class="search-value">Донецк</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Мин. цена:<span class="search-value">9000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Макс.цена:<span class="search-value">10 000 руб.</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Производитель:<span class="search-value">lG</span></p>
+							<p class="param-search"><span class="glyphicon glyphicon-remove"></span>Модель:<span class="search-value">54548т</span></p>
+							</br>
+							<div class="his-search">
+								<a href="#" class="hissearch">Найти &raquo;</a>
+							</div>
+				        </div>
+				</section>
+				<section id="content-tab4">
+				<div class="row">
+						<div class="col-sm-4">
+							<h6 class="cap-settings right-text">Кошелек</h6>
+						</div>
+						<div class="col-sm-8">
+						<p  class="purse">2656 руб.</p>
+						<a href="#" class="center">Пополнить</a>
+						</div>
+				</div>
+				
+				<hr>
+				<div class="row">
+						<div class="col-sm-4">
+							<h6 class="cap-settings right-text">Контактная информация</h6>
+						</div>
+						<div class="col-sm-8">
+								  <select>
+									<option selected>Город</option>				
+									<option value="Донецк">Донецк</option>
+									<option value="Луганск">Луганск</option>
+								   </select>
+							<input type="text" value="" id="name"  placeholder="Ваше имя" oninput="validateName(this)"></input>
+							<input type="text" value="" id=""  placeholder="Телефон"></input>
+							<a href="#" class="center">Сохранить</a>
+						</div>
+				</div>			
+				<hr>
+				<div class="row">
+						<div class="col-sm-4">
+							<h6  class="cap-settings right-text">Смена пароля</h6>
+						</div>
+						<div class="col-sm-8">
+							<input type="password" autocomplete="off" value="" class="" id="password"  placeholder="Текущий пароль" oninput="validatePassword(this)"></input>
+							<span id="error-password" class="error"></span>	
+							<input type="password" autocomplete="off" value="" class="" id="password"  placeholder="Новый пароль" oninput="validatePassword(this)"></input>
+							<span id="error-password" class="error"></span>					
+							<input type="password" autocomplete="off" value="" id="password-repeate"    placeholder="Новый пароль ещё раз" oninput="validatePasswordRepeate(this)"></input>	
+							<span id="error-password-repeate" class="error"></span>	
+							<a href="#" class="center">Сохранить</a>
+						</div>
+				</div>
+				<hr>
+					<div class="row">
+						<div class="col-sm-4">
+							<h6 class="cap-settings right-text">Удаление учетной записи</h6>
+						</div>
+						<div class="col-sm-8">
+							<p>Если вы хотите навсегда удалить свою учётную запись и все свои объявления, 
+							то нажмите на кнопку «Перейти к удалению учётной записи».</p>
+							<a href="#" class="center">Удалить учетную запись</a>
+						</div>
+					</div>
+				</section>
+		</div>
+		</div>
+<!-------------------------------------------Футер -------------------------------------------->
+		</div>
+		
+		
+		<footer>
+			<div class="container">
+				<ul>
+					<li><a href="#">Обратная связь</a></li>
+					<li><a href="#">Платные услуги</a></li>
+					<li><a href="#">Объявления</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Карта сайта</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Правила</a></li>
+					<li><a href="#">Регистрация</a></li>
+					<li><a href="#">Условия использования</a></li>
+				</ul>
+			</div>
+		</footer>
+		</div>
+</body>
+</html>

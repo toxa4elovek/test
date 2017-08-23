@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Регистрация</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/bootstrap.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+	
+</head>
+<body>
+	<div id="wrapper">
+		<div class="middle">
+		<header id="header">
+            <div class="container">
+				<div class="row">
+					<div class="col-sm-2 col-xs-1">
+						<a href="#"><img src="images/logo.png"></a></a>
+					</div>
+					<div class="col-sm-10 col-xs-11">
+						<div class="my-block right">
+							<a href="#" class="st-button">Подать обяъвление</a>
+						</div>
+						<div class="private my-block right">
+							<a href="#"><span class="glyphicon glyphicon-user"></span>Личный кабинет</a>
+							<div class="personal">
+								<a href="#" class="st-button">Войти</a>
+								<a href="#">Сообщения</a>
+								<a href="#">Обяъвления</a>
+								<a href="#">Настройки</a>
+								<a href="#">Выйти</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--------------------------------------------ОСНОВНОЕ СОДЕРЖИМОЕ СТРАНИЦЫ------------------------------------------>
+				 <div class="autorization registr">
+					<h2 class="center">Регистрация</h2>
+					<div class="bottom-indent">
+						<input type="radio" name="status" value="">Частное лицо</input>
+						<input type="radio" name="status" value="">Компания</input>
+					</div>
+					<span id="error-status" class="error"></span>
+					<input type="text" value="" id="name"  placeholder="Ваше имя" oninput="validateName(this)"></input>
+					<span id="error-name" class="error"></span>
+					<input type="text" value="" id="email"  placeholder="Email-адрес" oninput="validateEmail(this)"></input>
+					<span id="error-email" class="error"></span>
+					<input type="password" autocomplete="off" value="" class="" id="password"  placeholder="Пароль" oninput="validatePassword(this)"></input>
+					<span id="error-password" class="error"></span>					
+					<input type="password" autocomplete="off" value="" id="password-repeate"    placeholder="Пароль ещё раз" oninput="validatePasswordRepeate(this)"></input>	
+					<span id="error-password-repeate" class="error"></span>		
+					<div class="captcha">
+						<input type="text" value="" id="captcha"  placeholder="Текст с картинки"></input>		
+						<img src="images/captcha.jpg" alt="">
+						<span class="glyphicon glyphicon-repeat"></span><br>
+						<span id="error-captcha" class="error"></span>
+					</div>
+					
+					<input type="checkbox" id="agreement"> Я соглашаюсь с правилами использования сервиса,
+					а также передачей и обработкой моих данных. Я подтверждаю свою ответственность за размещения объявлений.</input><br>
+					<span id="error-agrement" class="error"></span>
+					<input type="submit" class="st-button" value="Регистрация" onclick="checkform()">
+				</div>
+				<p class="center bottom-indent">Уже зарегистрированны?  <a href="login.html">Войти</a></p>
+
+		<!-------------------------------------------ФУТЕР -------------------------------------------->
+		</div>
+				<footer>
+			<div class="container">
+				<ul>
+					<li><a href="#">Обратная связь</a></li>
+					<li><a href="#">Платные услуги</a></li>
+					<li><a href="#">Объявления</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Карта сайта</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Правила</a></li>
+					<li><a href="#">Регистрация</a></li>
+					<li><a href="#">Условия использования</a></li>
+				</ul>
+			</div>
+		</footer>
+		</div>
+		<script type="text/javascript" src="js/mscript.js"></script>
+</body>
+</html>

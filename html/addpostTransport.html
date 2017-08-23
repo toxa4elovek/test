@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Подать объявление</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/bootstrap.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="middle">
+		<header id="header">
+            <div class="container">
+				<div class="row">
+					<div class="col-sm-2 col-xs-1">
+						<a href="#"><img src="images/logo.png"></a></a>
+					</div>
+					<div class="col-sm-10 col-xs-11">
+						<div class="my-block right">
+							<a href="#" class="st-button">Подать обяъвление</a>
+						</div>
+						<div class="private my-block right">
+							<a href="#"><span class="glyphicon glyphicon-user"></span>Личный кабинет</a>
+							<div class="personal">
+								<a href="#" class="st-button">Войти</a>
+								<a href="#">Сообщения</a>
+								<a href="#">Обяъвления</a>
+								<a href="#">Настройки</a>
+								<a href="#">Выйти</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--------------------------------------------ОСНОВНОЕ СОДЕРЖИМОЕ СТРАНИЦЫ------------------------------------------>
+		
+				 <div class="addpost">
+					<h2 class="center">Подать бесплатное объявление</h2>
+					<div class="infor-saler">
+						<h3>Контактная информация</h3>
+						<div class="bl">
+							<label for="add-title">Email-адрес<span class="star">*</span></label>
+							<input type="text" name="" id="email" value="" oninput="validateEmail(this)"></input>
+							<span id="error-email" class="error"></span>
+						</div>
+						<div class="bl">
+							<label for="add-title">Контактное лицо<span class="star">*</span></label>
+							<input type="text" name="" id="name" value="" oninput="validateName(this)"></input>
+							<span id="error-name" class="error"></span>
+						</div>
+						<div class="bl">
+							<label for="add-title">Местоположение<span class="star">*</span></label>
+							<input type="text" name="" id="add-title" value=""></input>
+						</div>
+						<div class="bl">
+							<label for="add-title">Номер телефона<span class="star">*</span></label>
+							<input type="text" name="" id="phone" value="" oninput="validatePhone(this)"></input>
+							<span id="error-phone" class="error"></span>
+						</div>
+						<div class="bl">
+							<label for="add-title">Skype</label>
+							<input type="text" name="" id="add-title" value=""></input>
+						</div>
+					</div>
+					<div class="bl">
+						<label for="caption">Заголовок<span class="star">*</span></label>
+						<input type="text" name="" id="caption" value=""></input>
+						<span id="error-caption" class="error"></span>
+					</div>
+					<div class="bl">
+						<label for="add-title">Категория<span class="star">*</span></label>
+						<input type="text" id= "category" list="cities_list">
+							<datalist id="cities_list">
+							  <option>Категория 1</option>
+							  <option>Категория 2</option>
+							</datalist>
+							<span id="category-error" class="error"></span>
+					</div>
+					
+					<div class="bl">
+						<label for="description">Описание<span class="star">*</span></label>
+						<textarea rows="10" cols="45" name="text" id="description"></textarea>	
+						<span id="error-descr" class="error"></span>
+					</div>
+					
+					<div class="bl">
+						<label for="add-title">Фотографии<span class="descr-field">Объявления с фото получают в среднем
+						в 5-7 раз больше откликовы</span></label>
+						<div class="photo-line">
+						<div class="row">
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+						  </div>
+						  
+						  <div class="row">
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+						  </div>
+						</div>	
+					</div>
+
+					<div class="publication">
+						<a href="#">Предварительный просмотр</a>
+						<input type="submit" class="st-button" onclick="checkFormPost()" value="Добавить объявление">
+					</div>
+				
+		</div>
+		<!-------------------------------------------Футер -------------------------------------------->
+		</div>
+		
+		
+		<footer>
+			<div class="container">
+				<ul>
+					<li><a href="#">Обратная связь</a></li>
+					<li><a href="#">Платные услуги</a></li>
+					<li><a href="#">Объявления</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Карта сайта</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Правила</a></li>
+					<li><a href="#">Регистрация</a></li>
+					<li><a href="#">Условия использования</a></li>
+				</ul>
+			</div>
+		</footer>
+		</div>
+	<script type="text/javascript" src="js/mscript.js"></script>
+</body>
+</html>

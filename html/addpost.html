@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Подать объявление</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/bootstrap.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="ui/jquery-ui.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div class="middle">
+			<header id="header">
+            <div class="container">
+				<div class="row">
+					<div class="col-sm-2 col-xs-1">
+						<a href="#"><img src="images/logo.png"></a></a>
+					</div>
+					<div class="col-sm-10 col-xs-11">
+						<div class="my-block right">
+							<a href="#" class="st-button">Подать обяъвление</a>
+						</div>
+						<div class="private my-block right">
+							<a href="#"><span class="glyphicon glyphicon-user"></span>Личный кабинет</a>
+							<div class="personal">
+								<a href="#" class="st-button">Войти</a>
+								<a href="#">Сообщения</a>
+								<a href="#">Обяъвления</a>
+								<a href="#">Настройки</a>
+								<a href="#">Выйти</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--------------------------------------------ОСНОВНОЕ СОДЕРЖИМОЕ СТРАНИЦЫ------------------------------------------>
+		
+				 <div class="addpost">
+					<h2 class="center">Подать бесплатное объявление</h2>
+					<div class="infor-saler">
+						<h3>Контактная информация</h3>
+						<div class="bl">
+							<label for="add-title">Email-адрес<span class="star">*</span></label>
+							<input type="text" name="" id="email" value="" oninput="validateEmail(this)"></input>
+							<span id="error-email" class="error"></span>
+						</div>
+						<div class="bl">
+							<label for="add-title">Контактное лицо<span class="star">*</span></label>
+							<input type="text" name="" id="name" value="" oninput="validateName(this)"></input>
+							<span id="error-name" class="error"></span>
+						</div>
+						<div class="bl">
+							<label for="add-title">Местоположение<span class="star">*</span></label>
+							<input type="text" name="" id="add-title" value=""></input>
+						</div>
+						<div class="bl">
+							<label for="add-title">Номер телефона<span class="star">*</span></label>
+							<input type="text" name="" id="phone" value="" oninput="validatePhone(this)"></input>
+							<span id="error-phone" class="error"></span>
+						</div>
+						<div class="bl">
+							<label for="add-title">Skype</label>
+							<input type="text" name="" id="add-title" value=""></input>
+						</div>
+					</div>
+					<h3 class="separate">Основные характеристики</h3>
+					<hr class="red">
+					<div class="bl">
+						<label for="caption">Заголовок<span class="star">*</span></label>
+						<input type="text" name="" id="caption" value=""></input>
+						<span id="error-caption" class="error"></span>
+					</div>
+					<div class="bl">
+						<label for="add-title">Категория<span class="star">*</span></label>
+						<input type="text" id= "category" list="cities_list">
+							<datalist id="cities_list">
+							  <option>Категория 1</option>
+							  <option>Категория 2</option>
+							</datalist>
+							<span id="category-error" class="error"></span>
+					</div>
+					
+					<div class="bl">
+						<label for="description">Описание<span class="star">*</span></label>
+						<textarea rows="10" cols="45" name="text" id="description"></textarea>	
+						<span id="error-descr" class="error"></span>
+					</div>
+					
+					<div class="bl">
+						<label for="add-title">Фотографии<span class="descr-field">Объявления с фото получают в среднем
+						в 5-7 раз больше откликовы</span></label>
+						<div class="photo-line">
+						<div class="row">
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+						  </div>
+						  
+						  <div class="row">
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+							<div class="col-sm-2">
+								<a href="#"><span class="add-photo"></span></a>
+							</div>
+						  </div>
+						</div>	
+					</div>
+					
+					<h3 class="separate">Дополнительные характеристики</h3>
+					<p>* укажите дополнительные характеритистики, чтобы ваше объявление было легче найти</p>
+					<hr class="red">
+					
+					<div class="bl">
+						 <select>
+								<option selected>Модель</option>				
+								<option value="Модель">Модель (15)</option>
+								<option value="Модель">Модель (15)</option>
+								<option value="Модель">Модель (15)</option>
+						</select>
+					</div>
+					<div class="bl">
+						<div class="checkbox-dropdown">
+									Марка
+									<ul class="checkbox-dropdown-list">
+										<li><label>
+												<input type="checkbox" value="Vejle" name="city" />Марка 1</label></li>
+										<li><label>
+												<input type="checkbox" value="Horsens" name="city" />Марка 2</label></li>
+										<li><label>
+												<input type="checkbox" value="Kolding" name="city" />Марка 3</label></li>
+										<li><label>
+												<input type="checkbox" value="Fredericia" name="city" />Марка 4</label></li>
+									</ul>
+								</div>
+					</div>
+					
+					<div class="bl">
+					<a href="#" onclick="hiddeElement('list-sostoyanie')">Состоние:</a>	
+								<div id="list-sostoyanie">
+								<div class="cbx"><input type="checkbox" id="check"><label for="check">Новая</label></div>
+								<div class="cbx"><input type="checkbox" id="check1"><label for="check1">Б/у</label></div>
+								</div>
+					</div>
+					
+					<div class="bl">
+					<p>Объем двигателя:<br>
+						<input class="form-control" name="price" id="price">
+						</p>
+						<div id="slider-range"></div>
+					</div>
+
+					<div class="publication">
+						<a href="#">Предварительный просмотр</a>
+						<input type="submit" class="st-button" onclick="checkFormPost()" value="Добавить объявление">
+					</div>
+				
+		</div>
+		<!-------------------------------------------Футер -------------------------------------------->
+		</div>
+		
+		
+		<footer>
+			<div class="container">
+				<ul>
+					<li><a href="#">Обратная связь</a></li>
+					<li><a href="#">Платные услуги</a></li>
+					<li><a href="#">Объявления</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Карта сайта</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Правила</a></li>
+					<li><a href="#">Регистрация</a></li>
+					<li><a href="#">Условия использования</a></li>
+				</ul>
+			</div>
+		</footer>
+		</div>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mscript.js"></script>
+<script src="ui/jquery-ui.js"></script>
+<script>
+	//скролл
+	$(function(){
+
+	$( "#slider-range" ).slider({
+		range: true,
+		min: 0,
+		max: 1000,
+		values: [ 0, 300 ],
+		step: 10,
+		slide: function( event, ui ) {
+			$( "#price" ).val(  ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+		}
+	});
+	$( "#price" ).val(  $( "#slider-range" ).slider( "values", 0 ) +
+		" - " + $( "#slider-range" ).slider( "values", 1 ) );
+
+})
+</script>
+
+</body>
+</html>
