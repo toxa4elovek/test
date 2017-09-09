@@ -17,10 +17,17 @@ return [
             // Отключаем шаблон модуля,
             // используем шаблон нашей админки.
             'layout' => null,
+        ],
+        'user' => [
+            'class' => 'dektrium\user\Module',
+            'admins' => ['admin'],
+        ],
+        'rbac' => [
+            'class' => 'dektrium\rbac\RbacWebModule',
         ]
     ],
     /*'as access' => [
-        'class' => 'mdm\admin\classes\AccessControl',
+        'class' => 'mdm\admin\components\AccessControl',
         // Маршруты, открытые по умолчанию всегда.
         // Открываем только для начальной разработки.
         // Как только основные данные о ролях заполнены,
@@ -33,6 +40,8 @@ return [
             'site/*',
             'users-admin/*',
             'debug/*',
+            'rbac/*',
+            'admin/*'
         ]
     ],*/
     'components' => [
@@ -43,6 +52,7 @@ return [
                 ],
             ],
         ],
+
         'request' => [
             'csrfParam' => '_csrf-backend',
             'baseUrl' => '/admin',

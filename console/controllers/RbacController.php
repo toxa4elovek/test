@@ -8,15 +8,15 @@
 
 namespace console\controllers;
 
+use dektrium\rbac\RbacConsoleModule;
 use yii\console\Controller;
 
 
-class RbacController extends Controller
+class RbacController extends RbacConsoleModule
 {
     public function actionInit()
     {
         $authManager = \Yii::$app->authManager;
-        var_dump($authManager);
 
         // Create roles
         $admin  = $authManager->createRole('admin');
@@ -61,7 +61,7 @@ class RbacController extends Controller
         $authManager->addChild($admin, $update);*/
     }
 
-    public function actionHello()
+    public function actionGo()
     {
         echo 'Hello';
     }

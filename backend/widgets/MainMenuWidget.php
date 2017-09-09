@@ -21,19 +21,7 @@ class MainMenuWidget extends Widget
             'items' => [
                 [
                     'label' => 'Пользователи',
-                    'url' => Url::to(['/admin/user']),
-                    'template' => '<a href="{url}"><i class="fa fa-users"></i> <span>{label}</span></a>',
-
-                ],
-                [
-                    'label' => 'Роли',
-                    'url' => Url::to(['/admin/role']),
-                    'template' => '<a href="{url}"><i class="fa fa-users"></i> <span>{label}</span></a>',
-
-                ],
-                [
-                    'label' => 'Разрешения',
-                    'url' => Url::to(['/admin/permission']),
+                    'url' => Url::to(['/user/admin']),
                     'template' => '<a href="{url}"><i class="fa fa-users"></i> <span>{label}</span></a>',
 
                 ],

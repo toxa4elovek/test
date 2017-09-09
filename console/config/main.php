@@ -21,6 +21,7 @@ return [
         'user' => [
             'class' => 'dektrium\user\Module',
         ],
+        'rbac' => 'dektrium\rbac\RbacConsoleModule',
     ],
     'components' => [
         'log' => [

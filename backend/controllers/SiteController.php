@@ -1,6 +1,7 @@
 <?php
 namespace backend\controllers;
 
+use common\classes\Debug;
 use common\models\User;
 use Yii;
 use yii\web\Controller;
@@ -19,20 +20,6 @@ class SiteController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['error'],
-                        'allow' => true,
-                    ],
-                    [
-                        'actions' => ['index'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -61,6 +48,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        if(!Yii::$app->user->can('admin')) $this->redirect('/');
         return $this->render('index');
     }
 }
